@@ -22,3 +22,6 @@ Output:
 	- In the future, I would like to figure out how to convert the .csv directly to .spacy, without the intermediate step.
 
 [Also want to give credit to this tutorial on text classification by Catherine Breslin](https://catherinebreslin.medium.com/text-classification-with-spacy-3-0-d945e2e8fc44), which was very helpful
+
+## Notes
+Please note that the datasets are not included in this repo. If you want to recreate them, just download the CSVs from [the dataset from Kaggle](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis), and run them through convert_csv_to_json.py and convert.py.
