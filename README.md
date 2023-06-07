@@ -1,5 +1,4 @@
 # Simple Sentiment Analysis
-A Python sentiment analysis script trained on a dataset of Tweets that are classified as positive or negative. Created by Sam Noyes in 2023.
 
 ## About
 This sentiment analysis script uses the textcat module of the spaCy natural language processing library, in conjunction with a dataset of Tweets categorized as "positive" and "negative", to perform sentiment analysis. It represents one of my first forays into NLP and can be used as an example by anyone trying to learn.
