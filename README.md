@@ -1,7 +1,7 @@
 # Simple Sentiment Analysis
 
 ## About
-This sentiment analysis script uses the textcat module of the spaCy natural language processing library, in conjunction with a dataset of Tweets categorized as "positive" and "negative", to perform sentiment analysis. It represents one of my first forays into NLP and can be used as an example by anyone trying to learn.
+This sentiment analysis tool uses the textcat module of the spaCy natural language processing library, in conjunction with a dataset of Tweets categorized as "positive" and "negative", to perform sentiment analysis. It represents one of my first forays into NLP and can be used as an example by anyone trying to learn.
 
 ## Usage
 `python3 simple_sentiment_analysis.py <string to analyze>`
