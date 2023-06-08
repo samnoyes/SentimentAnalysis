@@ -50,7 +50,7 @@ Output:
 Feel free to reuse this project to train based on your own dataset. It doesn't just have to be sentiment analysis: you can use this for other things such as text classification – for example, [categorizing a news article based on the topic.](https://catherinebreslin.medium.com/text-classification-with-spacy-3-0-d945e2e8fc44) If you have a csv dataset that you would like to use, you will need to follow these steps:
 1. Import it into the project directory and edit convert_csv_to_json.py lines 16-26 to process the data based on the format of your csv. Or, if you want to just follow along with what I did, feel free to just download the csv that I used from Kaggle: [Twitter Sentiment Analysis](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis)
 2. Run `python convert_csv_to_json.py <dataset.csv> <dataset_jsonl.jsonl>` to convert it to jsonl (<dataset_jsonl.jsonl> is the output file, feel free to name it whatever you want).
-3. Run `python convert.py <dataset_jsonl.jsonl> train.spacy` and `python convert.py <dataset_jsonl.jsonl> dev.spacy` to create the dev and train splits of your data, formatted for processing by spaCy.
+3. Run `python convert.py 'en' <dataset_jsonl.jsonl> train.spacy` and `python convert.py 'en' <dataset_jsonl.jsonl> dev.spacy` to create the dev and train splits of your data, formatted for processing by spaCy.
 4. Run `python -m spacy train config.cfg --paths.train ./train.spacy  --paths.dev ./dev.spacy --output textcat_model` to train the model. The output will look something like this:
 ~~~
 ============================= Training pipeline =============================
