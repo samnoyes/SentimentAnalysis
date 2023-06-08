@@ -77,4 +77,4 @@ E    #       LOSS TEXTCAT  CATS_SCORE  SCORE
 5. Run simple_sentiment_analysis.py with your input to check the results.
 
 ## Notes
-Please note that the datasets are not included in this repo. If you want to recreate them, just download the CSVs from [the dataset from Kaggle](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis), and run them through convert_csv_to_json.py and convert.py.
+Please note that the datasets are not included in this repo. If you want to recreate them, just download the CSVs from [the dataset from Kaggle](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis), and run them through convert_csv_to_json.py and convert.py. Feel free to reach out to me with any feedback or suggestions, or just to let me know how you used this project!
