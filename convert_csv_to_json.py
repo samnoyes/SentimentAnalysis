@@ -10,6 +10,9 @@ def convert_csv_to_json(csv_file, jsonl_file):
         
         with open(jsonl_file, "w") as output_file:
             for row in data:
+                # This for loop is the part you should edit if you want to use your own dataset.
+                # Change the next two lines to extract the data from whatever columns they are in,
+                # and store them below in the "cats" object.
                 sentence = row[0]
                 sentiment = float(row[1])
 
