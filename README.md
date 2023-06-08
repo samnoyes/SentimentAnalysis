@@ -38,14 +38,13 @@ Output:
 Output:
 `{'positive': 0.21716347336769104, 'negative': 0.7828364968299866}`
 
-## Process/Credits
+## Credits
 - Downloaded Sentiment Analysis dataset from Kaggle: [Twitter Sentiment Analysis](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis)
 - Created the convert_csv_to_json.py script, which converted the dataset from .csv to .jsonl, with the help of ChatGPT (and some significant tweaks). Ran the .csv training dataset through this script.
 - Got the convert.py script, which converted the dataset from .jsonl to .spacy, from [this textcat demo project](https://github.com/explosion/projects/tree/v3/pipelines/textcat_demo). Ran the .jsonl training dataset through this script twice to create dev.spacy and train.spacy.
 	- In the future, I would like to figure out how to convert the .csv directly to .spacy, without the intermediate step.
-- Trained the model, waiting ~24 hours for it to complete.
-
-[Also want to give credit to this tutorial on text classification by Catherine Breslin](https://catherinebreslin.medium.com/text-classification-with-spacy-3-0-d945e2e8fc44), which was very helpful
+- [The spaCy docs on training](https://spacy.io/usage/training) are a great resource.
+- [This tutorial on text classification by Catherine Breslin](https://catherinebreslin.medium.com/text-classification-with-spacy-3-0-d945e2e8fc44) was very helpful.
 
 ## Customization
 Feel free to reuse this project to train based on your own dataset. It doesn't just have to be sentiment analysis: you can use this for other things such as text classification – for example, [categorizing a news article based on the topic.](https://catherinebreslin.medium.com/text-classification-with-spacy-3-0-d945e2e8fc44) If you have a csv dataset that you would like to use, you will need to follow these steps:
