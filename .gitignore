@@ -1,7 +1,7 @@
 test_data.csv
 test_jsonl_data.jsonl
 train_data.csv
-trian_jsonl_data.jsonl
+train_jsonl_data.jsonl
 dev.spacy
 docs_issues_training.jsonl
 train.spacy
