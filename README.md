@@ -43,7 +43,7 @@ Output:
 - Created the convert_csv_to_json.py script, which converted the dataset from .csv to .jsonl, with the help of ChatGPT (and some significant tweaks). Ran the .csv training dataset through this script.
 - Got the convert.py script, which converted the dataset from .jsonl to .spacy, from [this textcat demo project](https://github.com/explosion/projects/tree/v3/pipelines/textcat_demo). Ran the .jsonl training dataset through this script twice to create dev.spacy and train.spacy.
 	- In the future, I would like to figure out how to convert the .csv directly to .spacy, without the intermediate step.
-- Trained model with the command: `python -m spacy train config.cfg --paths.train ./train.spacy  --paths.dev ./dev.spacy --output textcat_model`. Waited ~24 hours for training to complete.
+- Trained the model, waiting ~24 hours for it to complete.
 
 [Also want to give credit to this tutorial on text classification by Catherine Breslin](https://catherinebreslin.medium.com/text-classification-with-spacy-3-0-d945e2e8fc44), which was very helpful
 
@@ -53,11 +53,12 @@ Feel free to reuse this project to train based on your own dataset. It doesn't j
 2. Run `python convert_csv_to_json.py <dataset.csv> <dataset_jsonl.jsonl>` to convert it to jsonl.
 3. Run `python convert.py <dataset_jsonl.jsonl> train.spacy` and `python convert.py <dataset_jsonl.jsonl> dev.spacy` to create the dev and train splits of your data, formatted for processing by spaCy.
 4. Run `python -m spacy train config.cfg --paths.train ./train.spacy  --paths.dev ./dev.spacy --output textcat_model` to train the model. The output will look something like this:
-`============================= Training pipeline =============================
+~~~
+============================= Training pipeline =============================
 ℹ Pipeline: ['textcat']
 ℹ Initial learn rate: 0.001
 E    #       LOSS TEXTCAT  CATS_SCORE  SCORE 
-``---  ------  ------------  ----------  ------
+---  ------  ------------  ----------  ------
   0       0          0.25       50.77    0.51
   0     200         47.06       68.29    0.68
   0     400         43.01       70.78    0.71
@@ -71,8 +72,9 @@ E    #       LOSS TEXTCAT  CATS_SCORE  SCORE
   0    2000         32.66       77.30    0.77
   0    2200         32.77       77.54    0.78
   0    2400         32.39       77.72    0.78`
-
+~~~
   You may have to wait ~24 hours for this to run, although feel free to stop it once it is no longer improving.
+  
 5. Run simple_sentiment_analysis.py with your input to check the results.
 
 ## Notes
