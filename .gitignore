@@ -6,3 +6,4 @@ dev.spacy
 docs_issues_training.jsonl
 train.spacy
 train_jsonl_data.jsonl
+test.spacy
